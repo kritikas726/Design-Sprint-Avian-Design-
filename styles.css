@@ -292,10 +292,10 @@ nav{
     margin-right: 3vh;
 }
 .our-blog-container{
-    height: 100vh;
     margin-top: 10vh;
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://static.wixstatic.com/media/ec9816_6cad91bd1e0e48f19fb000611fe63bb7~mv2.png/v1/fill/w_1210,h_768,al_c,q_95/ec9816_6cad91bd1e0e48f19fb000611fe63bb7~mv2.webp");
     background-repeat: no-repeat;
+    background-blend-mode: overlay;
     background-size: cover;
     padding: 3vh;
     color: white;
@@ -308,22 +308,155 @@ nav{
 }
 .blogs-container{
     display: flex;
-    background-color: chocolate;
     justify-content: center;
     margin-top: 10vh;
-    padding: 2vh;
+    padding-top: 2vh;
     margin-left: 5vh;
 }
 .blog{
     margin-right: 5vh;
+    background-color: white;
 }
 .blog img{
     height: 165px;
     width: 290px;
-    background-color: burlywood;
 }
 .blog-content{
     height: 225px;
     width: 290px;
-    background-color: cadetblue;
+    margin-top: -4px;
+    padding: 4.5vh 4vh;
+    box-sizing: border-box;
+    text-align: left;
+}
+.blog-content span{
+    font-size: 13.5px;
+    font-weight: normal;
+    color: #595959;
+}
+.blog-content h2{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 25px;
+    color: black;
+}
+.blog-content p{
+    font-size: 15px;
+    font-weight: lighter;
+    color: #595959;
+}
+.numbering{
+    display: flex;
+    justify-content: center;
+    margin:2vh 0 6vh 5vh;
+}
+.numbering a{
+    color: black;
+    margin-top: 2vh;
+    margin-right: 4.7vh;
+}
+hr{
+    margin: 0;
+    height: 1px;
+    border: 0.5px solid black;
+}
+footer{
+    background-color: #302B70;
+    display: flex;
+    justify-content: center;
+    padding: 12vh;
+    color: white;
+}
+form{
+    margin-right: 8vh;
+    margin-left: 10vh;
+}
+form h1{
+    margin-top: 0;
+    font-weight: normal;
+}
+form input{
+    width: 42vh;
+    background: transparent;
+    padding: 5px 8px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    color: white;
+}
+form input::placeholder{
+    color: white;
+}
+textarea{
+    height: 20vh;
+    width: 44vh;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 5px 15px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    color: white;
+}
+button{
+    outline: none;
+    height: 25px;
+    width:100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    float: right;
+}
+.about{
+    margin: 0 8vh;
+}
+.about h1{
+    margin-top: 0;
+    font-weight: normal;
+}
+.about button{
+    outline: none;
+    height: 30px;
+    width: 180px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    margin-bottom: 3vh;
+    float: none;
+}
+.about .contact-details{
+    margin-top: 8vh;
+}
+.about .contact-details .contact-links{
+    margin-top: 3vh;
+}
+.about .contact-details .contact-links img{
+    height: 35px;
+    width: 105px;
+}
+.contact{
+    height: 40vh;
+    width: 40vh;
+    margin-left: 8vh;
+}
+.contact h1{
+    margin-top: 0;
+}
+.contact p{
+    font-size: 14px;
+}
+.contact i{
+    margin-right: 3vh;
 }
