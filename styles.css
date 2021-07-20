@@ -3,6 +3,9 @@ html, body{
     margin: 0;
     box-sizing: border-box;
 }
+
+/*  Navbar Opened  */
+
 nav{
     background-color: #302B70;
     position: sticky;
@@ -32,8 +35,12 @@ nav{
     font-weight: bold;
     line-height: 34px;
 }
+
+/*  Navbar Closed  */
+
+/*  Intro Container Opened  */
+
 .intro-container{
-    height: 80vh;
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://static.wixstatic.com/media/ec9816_2eb87f9f47224104b16ec5e3cc468f59~mv2.png/v1/fill/w_1366,h_532,al_c,q_95/ec9816_2eb87f9f47224104b16ec5e3cc468f59~mv2.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +93,7 @@ nav{
 .intro-img{
     height: 580px;
     width: 360px;
-    margin: 6vh 36vh auto 0;
+    margin: 6vh auto auto -36vh;
     background-repeat: no-repeat;
     background-size: cover;
     animation: 9s intro-img infinite;
@@ -103,6 +110,11 @@ nav{
         background-image: url(https://static.wixstatic.com/media/ec9816_58d376c7bae642ff8c9bc2d22895f107~mv2.png/v1/fill/w_448,h_721,al_c,q_95/Design%20Thinking%20Sprint%20-%20Centre3.webp);
     }
 }
+
+/*  Intro Container Closed  */
+
+/*  What Container Opened  */
+
 .what-container{
     height: 80vh;
     display: flex;
@@ -136,8 +148,12 @@ nav{
     line-height: 3.2vh;
     letter-spacing: 0.5px;
 }
+
+/*  What Container Closed  */
+
+/*  Our Product Container Opened  */
+
 .our-product-container{
-    height: 121.5vh;
     background-image: url("https://static.wixstatic.com/media/ec9816_6cad91bd1e0e48f19fb000611fe63bb7~mv2.png/v1/fill/w_1210,h_768,al_c,q_95/ec9816_6cad91bd1e0e48f19fb000611fe63bb7~mv2.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,6 +254,11 @@ nav{
     width: 135px;
     margin-right: 1vh;
 }
+
+/*  Our Product Container Closed  */
+
+/*  Why Container Opened  */
+
 .why-container h1{
     text-align: center;
     color: #302B70;
@@ -260,7 +281,6 @@ nav{
     margin-right: 0;
 }
 .features-content{
-    width: 55vh;
     margin-left: 23vh;
     margin-right: -8vh;
 }
@@ -291,6 +311,11 @@ nav{
     margin-top: 2vh;
     margin-right: 3vh;
 }
+
+/*  Why Container Closed  */
+
+/*  Our Blog Container Opened  */
+
 .our-blog-container{
     margin-top: 10vh;
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://static.wixstatic.com/media/ec9816_6cad91bd1e0e48f19fb000611fe63bb7~mv2.png/v1/fill/w_1210,h_768,al_c,q_95/ec9816_6cad91bd1e0e48f19fb000611fe63bb7~mv2.webp");
@@ -355,11 +380,18 @@ nav{
     margin-top: 2vh;
     margin-right: 4.7vh;
 }
+
+/*  Our Blog Container Closed  */
+
 hr{
     margin: 0;
     height: 1px;
     border: 0.5px solid black;
 }
+
+
+/*  Footer Opened  */
+
 footer{
     background-color: #302B70;
     display: flex;
@@ -447,8 +479,6 @@ button{
     width: 105px;
 }
 .contact{
-    height: 40vh;
-    width: 40vh;
     margin-left: 8vh;
 }
 .contact h1{
@@ -459,4 +489,110 @@ button{
 }
 .contact i{
     margin-right: 3vh;
+}
+
+/*  Footer Closed  */
+
+@media (min-width: 410px) and (max-width: 900px){
+    .nav-container{
+        justify-content: center;
+    }
+    .nav-links{
+        display: none;
+    }
+    .intro-container{
+        display: block;
+        margin: auto;
+    }
+    .intro-text{
+        margin: auto;
+        width: 80%;
+        padding: 0;
+        margin-bottom: 5vh;
+    }
+    .intro-img{
+        margin: auto;
+    }
+    .what-sml-container{
+        display: block;
+        width: 90%;
+        justify-content: center;
+    }
+    .what-container{
+        height: auto;
+    }
+    .what-container img{
+        height: auto;
+        width: 90%;
+        margin: auto;
+    }
+    .what-content{
+        width: 90%;
+        margin: 2vh;
+    }
+    .our-product-container{
+        padding: 3vh;
+    }
+    .our-product-container p{
+        width: 80%;
+    }
+    .left-img{
+        height: 30vh;
+    }
+    .middle-img{
+        height: 30vh;
+        margin: auto 3vh;
+    }
+    .right-img{
+        height: 30vh;
+    }
+    .features-container{
+        display: block;
+        width: 80%;
+    }
+    .features-content{
+        margin: auto;
+    }
+    .features-container img{
+        height: auto;
+        width: 90%;
+        margin: auto;
+    }
+    .blogs-container{
+        display: block;
+        margin: auto;
+        padding: 3.8vh;
+    }
+    .blog{
+        margin: auto;
+        margin-bottom: 3vh;
+    }
+    footer{
+        display: block;
+        padding: 5vh;
+    }
+    form{
+        margin: auto;
+    }
+    form input{
+        width: 70vw;
+    }
+    textarea{
+        width: 74vw;
+    }
+    form button{
+        float: none;
+        margin-bottom: 5vh;
+        margin-left: 1vh;
+    }
+    .about{
+        margin: auto;
+        margin-bottom: 5vh;
+    }
+    .about .contact-details{
+        margin-top: 5vh;
+    }
+    .contact{
+        margin: auto;
+    }
 }
